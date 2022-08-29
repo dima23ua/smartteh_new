@@ -1,0 +1,132 @@
+.sub-header {
+
+	&__content {
+		display: flex;
+	}
+}
+.navigation-menu {
+	width: 310px;
+   background: #EDF2F6;
+   border-radius: 0px 0px 8px 8px;
+   overflow: hidden;
+
+	&__list {
+	}
+
+	&__item {
+		padding: 8px 20px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+         background-color: #DAE4ED;
+      }
+      &:hover .navigation-menu__link-text{
+         color: #4878A6;
+      }
+	}
+
+	&__link {
+		display: flex;
+      align-items: center;
+	}
+
+	&__link-img {
+
+	}
+
+	&__link-text {
+		margin-left: 10px;
+      color: var(--text-main);
+	}
+}
+//====main-slider
+.slider {
+   width: 100%;
+   max-width: 970px;
+	min-height: 160px;
+   margin: 20px 0 0 20px;
+   border-radius: 8px;
+   position: relative;
+   overflow: hidden;
+
+	&__content {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background-color: var(--text-main);
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: 0;
+			width: 970px;
+			height: 175px;
+			opacity: 0.3;
+			background: url('../img/lines.png') no-repeat center top / cover;
+		}
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10%;
+		align-items: center;
+		width: 100%;
+		color: #fff;
+	}
+
+	&__text-content {
+		padding: 0 10px;
+		max-width: 320px;
+	}
+
+	&__text-title {
+		display: flex;
+		font-style: normal;
+		font-weight: 700;
+		font-size: calc(20px + 28 * (100vw / 1340));
+		line-height: 130%;
+	}
+
+	&__text-subtitle {
+		display: flex;
+		font-style: normal;
+		font-weight: 500;
+		font-size: calc(16px + 16 * (100vw / 1340));
+		line-height: 130%;
+	}
+
+	&__img {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		padding-right: 15px;
+
+		& img {
+			width: 100%;
+		}
+	}
+}//====main-slider pagination
+.swiper-pagination {
+	display: flex;
+   width: 100%;
+}
+.slider .swiper-pagination-bullet {
+   display: flex;
+   width: 100%;
+   height: 3px;
+   border-radius: 0;
+   background: #EDF2F6;
+   border-radius: 2px;
+}
+.slider .swiper-pagination-bullet-active {
+   display: flex;
+   width: 100%;
+   height: 3px;
+   border-radius: 0;
+}

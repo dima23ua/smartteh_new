@@ -1,0 +1,106 @@
+//Подключение шрифтов
+@import "fonts";
+@import "libs.scss";
+
+* {
+	box-sizing: border-box;
+}
+html, 
+body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	font-family: "Exo2", sans-serif;
+	font-weight: 400;
+	background-color: #fff;
+	overflow-anchor: none;
+	min-width: 320px;
+	font-size: 16px;
+}
+html.lock {
+	overflow: hidden;
+}
+.wrapper {
+	min-width: 100%;
+	margin: 0 auto;
+}
+.container {
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+img {
+	display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+ul, li, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+::after, :before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+input, button, textarea {
+	font: inherit;
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+label {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+select {
+	outline: none;
+	border: none;
+	background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+::before,
+::after {
+	box-sizing: border-box
+}
+:root {
+	--white: #fff;
+	--dark-blue: #2a5275;
+	--blue: #4878a6;
+	--red: #f15152;
+	--light-blue: #edf2f6;
+	--yellow: #fbb13c;
+	--divider: #c8cacb;
+	--menu-blue: #0e1821;
+	--light-gray: #eaeaf0;
+	--light-yellow: #fff7e3;
+	--gray: #838688;
+	--text-main: #070c11;
+}
+//Стили компонентов
+@import "components";
+
+//Адаптация под мобильніе устойства
+@import "adaptive";

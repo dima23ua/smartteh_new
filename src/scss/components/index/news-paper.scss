@@ -1,0 +1,102 @@
+.news-block {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+
+		&__item {
+			width: 50%;
+			padding: 10px;
+
+			&:hover .news-block__title {
+				color: var(--blue);
+			}
+		}
+
+		&__item-content {
+			display: flex;
+			height: 100%;
+			border-radius: 8px;
+			background: var(--light-blue);
+			padding: 30px 50px;
+		}
+
+		&__item-img {
+			display: flex;
+			justify-content: center;
+
+			width: 100%;
+			max-width: 150px;
+			height: 180px;
+
+			margin-right: 20px;
+			overflow: hidden;
+
+			& img {
+				width: auto;
+				height: 100%;	
+				object-fit: cover;
+
+			}
+		}
+
+		&__item-text {
+		}
+
+		&__title {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 120%;
+			color: var(--text-main);
+			margin-bottom: 20px;
+			transition: 0.2s linear;
+		}
+
+		&__text {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 120%;
+			color: var(--text-main);
+			margin-bottom: 20px;
+		}
+
+		&__footer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__menu-products {
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: 2px;
+				right: -10px;
+				width: 6px;
+				height: 11px;
+				background: url('../img/triangle.svg') no-repeat center top/cover;
+			}
+		}
+
+		&__products-link {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 120%;
+			color: var(--blue);
+			
+		}
+
+		&__footer-text {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 120%;
+			color: var(--gray);
+		}
+}
+.page-news .news-block__item-content {
+	padding: 20px;
+}

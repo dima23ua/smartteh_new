@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+"title": "Smart Техника - Каталог товаров"
+})
+
+<body>
+   <div class="wrapper">
+
+      @@include('html/header.html')
+      @@include('html/pages/aside.html')
+
+      <section class="about-section">
+         <div class="container">
+            <div class="navigation-map">
+               <a href="index.html" class="navigation-map__link">Главная</a>
+               <a href="catalog.html" class="navigation-map__link">Каталог</a>
+            </div>
+         </div>
+      </section>
+
+      <section class="about-section">
+         <div class="container">
+
+            <!-- Заголовок страницы -->
+            <div class="section-title page-title">
+               <h2 class="section-title__title">Каталог</h2>
+            </div>
+
+            <!-- Контент Фильтр и товары -->
+            <div class="page-catalog-content">
+               @@include('html/pages/filters.html')
+               @@include('html/pages/catalog-body.html')
+            </div>
+
+         </div>
+      </section>
+
+      @@include('html/footer.html')
+
+   </div>
+
+   @@include('html/panel.html')
+
+   @@include('html/popups/authorization.html')
+   @@include('html/popups/registration.html')
+   @@include('html/popups/panel-popups.html')
+
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

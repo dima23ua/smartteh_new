@@ -1,0 +1,49 @@
+{
+  "name": "newgulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "galpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "svgSprive": "gulp svgSprive",
+    "zip": "gulp deployZIP --build"
+  },
+  "author": "dima23ua",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-file-include": "latest",
+    "gulp-fonter": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-ttf2woff2": "latest",
+    "gulp-version-number": "latest",
+    "gulp-webp": "latest",
+    "gulp-webp-html-nosvg": "latest",
+    "gulp-webpcss": "latest",
+    "gulp-zip": "latest",
+    "sass": "latest",
+    "swiper": "latest",
+    "webp-converter": "2.2.3",
+    "webpack": "latest",
+    "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "js-image-zoom": "^0.7.0",
+    "nouislider": "^15.6.0",
+    "simplebar": "^5.3.8"
+  }
+}

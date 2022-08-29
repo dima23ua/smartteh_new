@@ -1,0 +1,96 @@
+.tabs-product {
+	margin-top: 40px;
+}
+.tabs-header {
+	padding: 0 20px;
+	background-color: var(--light-blue);
+	border-radius: 8px;
+}
+.tabs-slider {
+	overflow: hidden;
+
+		&__slide {
+			width: auto;
+		}
+
+		&__title {
+			padding: 25px 10px;
+			margin: 0 10px;
+			cursor: pointer;
+
+			font-style: normal;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 130%;
+			color: var(--text-main);
+		}
+
+		&__title.active {
+			color: var(--blue);
+		} 
+}
+.swiper-content {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.tabs-content {	
+}
+
+.tabs-body {
+	margin-top: 40px;
+}
+.tabs-body-content {
+	display: none;
+
+		&__title {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 120%;
+			color: var(--text-main);
+			margin-bottom: 30px;
+		}
+
+		&__text {
+
+		}
+
+		&__text-paragraph {
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+}
+.tabs-body-content.active {
+	display: block;
+}
+//====Вкладка характеристики
+.characteristic-body {
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 25px 20px;
+		border-bottom: 1px solid var(--divider);
+
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 130%;
+		color: var(--text-main);
+
+	}
+
+	&__item-title {
+		width: 100%;
+		font-weight: 700;
+	}
+
+	&__item-value {
+		width: 100%;
+		max-width: 280px;
+	}
+}

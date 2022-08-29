@@ -1,0 +1,52 @@
+<!-- Форма регистраци -->
+<section class="popup-wrapper" id="registration">
+   <div class="popup-wrapper__container">
+
+      <div id="call" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+
+               <div class="popup__header">
+                  <h3 class="popup__header-title">Регистрация</h3>
+                  <a href="#header" class="popup__close close-popup"></a>
+               </div>
+
+               <div class="popup__content-body">
+                  <form action="#" method="post" enctype="multipart/form-data" class="form" name="form" id="form-reg">
+                     <div class="form-popup">
+                        <label for="name">Имя</label>
+                        <input class="form-popup__input" type="text" name="name" id="name-reg" required />
+
+                        <label for="name">Эл. почта</label>
+                        <input class="form-popup__input" type="mail" name="mail" id="mail-reg" required />
+
+                        <label for="phone">Номер телефона</label>
+                        <input class="form-popup__input" type="tel" name="phone" id="phone-reg" required />
+
+                        <label for="password">Придумайте пароль</label>
+                        <input class="form-popup__input" type="password" name="password" id="password-reg" required />
+                     </div>
+
+                     <div class="form-popup__link-content">
+                        <a href="" class="form-popup__link">Забыли пароль?</a>
+                     </div>
+                     <label class="form-popup__checkbox">
+                        <input type="checkbox" class="form-popup__checkbox-input">
+                        <span class="form-popup__checkbox-content">Запомнить меня</span>
+                     </label>
+
+                     <div class="form-popup__button">
+                        <input class="form-popup__button-link" type="submit" value="Войти">
+                     </div>
+
+                     <div class="form-popup__link-content center">
+                        <a href="#signin" class="form-popup__link popup-link">Я уже зарегистрирован</a>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

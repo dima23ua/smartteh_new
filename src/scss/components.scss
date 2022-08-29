@@ -1,0 +1,27 @@
+//==========Стили Header
+@import "components/header";
+@import "components/burger";
+
+//======index
+@import "components/index/sub-header";
+@import "components/index/hit-sale";
+@import "components/index/new";
+@import "components/index/blocks";
+@import "components/index/news-paper";
+
+//======pages
+@import "components/pages/main-about";
+@import "components/pages/aside";
+@import "components/pages/catalog-body";
+
+//====page-product
+@import "components/product/content-product";
+@import "components/product/tabs-product";
+
+//======popup-windows
+@import "components/panel";
+@import "components/popups/reg_auth";
+@import "components/popups/panel-popups";
+
+//==========Стили Footer
+@import "components/footer";

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+"title" : "Smart Техника - Новости"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html')
+
+      @@include('html/pages/aside.html')
+      <!-- Карта Сайта -->
+      <section class="about-section">
+         <div class="container">
+            <div class="navigation-map">
+               <a href="index.html" class="navigation-map__link">Главная</a>
+               <a href="news.html" class="navigation-map__link">Новости</a>
+            </div>
+         </div>
+      </section>
+
+      <section class="about-section">
+         <div class="container">
+
+            <!-- Заголовок страницы -->
+            <div class="section-title page-title">
+               <h2 class="section-title__title">Новости</h2>
+            </div>
+
+            <div class="news-block page-news">
+
+               <!-- Блок -->
+               <div class="news-block__item">
+                  <div class="news-block__item-content">
+                     <div class="news-block__item-img">
+                        <!-- Картинка -->
+                        <img loading="lazy" src="@img/news/news-2.jpg" alt="" title="">
+                     </div>
+                     <div class="news-block__item-text">
+                        <div class="news-block__title">Открытие нового магазина</div>
+                        <div class="news-block__text">Разнообразный и богатый опыт говорит нам, что консультация с
+                           широким
+                           активом требует от нас анализа анализа существующих паттернов поведения
+                        </div>
+
+                        <div class="news-block__footer">
+                           <div class="news-block__menu-products">
+                              <a href="" class="news-block__products-link">Подробнее</a>
+                           </div>
+                           <div class="news-block__footer-text">05 июня 2021</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Блок -->
+               <div class="news-block__item">
+                  <div class="news-block__item-content">
+                     <div class="news-block__item-img">
+                        <!-- Картинка -->
+                        <img loading="lazy" src="@img/news/news-1.jpg" alt="" title="">
+                     </div>
+                     <div class="news-block__item-text">
+                        <div class="news-block__title">Идейные соображения</div>
+                        <div class="news-block__text">Принимая во внимание показатели успешности,
+                           социально-экономическое развитие играет определяющее значение для вывода текущих активов
+                        </div>
+
+                        <div class="news-block__footer">
+                           <div class="news-block__menu-products">
+                              <a href="" class="news-block__products-link">Подробнее</a>
+                           </div>
+                           <div class="news-block__footer-text">05 июня 2021</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+               <!-- Блок -->
+               <div class="news-block__item">
+                  <div class="news-block__item-content">
+                     <div class="news-block__item-img">
+                        <!-- Картинка -->
+                        <img loading="lazy" src="@img/news/news-1.jpg" alt="" title="">
+                     </div>
+                     <div class="news-block__item-text">
+                        <div class="news-block__title">Работа в праздничные дни</div>
+                        <div class="news-block__text">Идейные соображения высшего порядка, а также семантический разбор
+                           внешних противодействий позволяет выполнить важные задания по разработке прогресса
+                           профессионального сообщества
+                        </div>
+
+                        <div class="news-block__footer">
+                           <div class="news-block__menu-products">
+                              <a href="" class="news-block__products-link">Подробнее</a>
+                           </div>
+                           <div class="news-block__footer-text">05 июня 2021</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </section>
+   </div>
+
+   @@include('html/footer.html')
+   @@include('html/panel.html')
+
+   @@include('html/popups/authorization.html')
+   @@include('html/popups/registration.html')
+   @@include('html/popups/panel-popups.html')
+
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>
